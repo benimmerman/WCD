@@ -1,0 +1,12 @@
+[run]
+py_script="py_script.py"
+
+[s3]
+bucket="bimmerman-wcd-pycloud2-1011"
+folder="input/"
+
+[rds]
+host="chp4aevyrnbe.us-east-1.rds.amazonaws.com"
+db_name="wcd-pycloud-2"
+port="3306"
+schema="superstore"

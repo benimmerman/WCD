@@ -1,0 +1,37 @@
+run.sh: line 15: sandbox/bin/activate: No such file or directory
+Start to run Python Script
+Traceback (most recent call last):
+  File "/Users/benimmerman/Desktop/WCD/miniprojects/pycloud2/py_script.py", line 4, in <module>
+    import boto3
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/boto3/__init__.py", line 16, in <module>
+    from boto3.session import Session
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/boto3/session.py", line 17, in <module>
+    import botocore.session
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/botocore/session.py", line 29, in <module>
+    import botocore.configloader
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/botocore/configloader.py", line 19, in <module>
+    from botocore.compat import six
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/botocore/compat.py", line 25, in <module>
+    from botocore.exceptions import MD5UnavailableError
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/botocore/exceptions.py", line 15, in <module>
+    from botocore.vendored import requests
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/botocore/vendored/requests/__init__.py", line 58, in <module>
+    from . import utils
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/botocore/vendored/requests/utils.py", line 26, in <module>
+    from .compat import parse_http_list as _parse_list_header
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/botocore/vendored/requests/compat.py", line 7, in <module>
+    from .packages import chardet
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/botocore/vendored/requests/packages/__init__.py", line 3, in <module>
+    from . import urllib3
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/botocore/vendored/requests/packages/urllib3/__init__.py", line 10, in <module>
+    from .connectionpool import (
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/botocore/vendored/requests/packages/urllib3/connectionpool.py", line 38, in <module>
+    from .response import HTTPResponse
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/botocore/vendored/requests/packages/urllib3/response.py", line 9, in <module>
+    from ._collections import HTTPHeaderDict
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/botocore/vendored/requests/packages/urllib3/_collections.py", line 1, in <module>
+    from collections import Mapping, MutableMapping
+ImportError: cannot import name 'Mapping' from 'collections' (/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/collections/__init__.py)
+PYTHON RUNNING FAILED
+[ERROR:] RETURN CODE:  1
+[ERROR:] REFER TO THE LOG FOR THE REASON FOR THE FAILURE.

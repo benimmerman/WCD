@@ -1,0 +1,19 @@
+run.sh: line 15: sandbox/bin/activate: No such file or directory
+Start to run Python Script
+Connecting to MySQL Database
+Traceback (most recent call last):
+  File "/Users/benimmerman/Desktop/WCD/miniprojects/pycloud2/py_script.py", line 39, in <module>
+    engine = mysql_connect(host, user, password, database, port, schema)
+  File "/Users/benimmerman/Desktop/WCD/miniprojects/pycloud2/py_script.py", line 9, in mysql_connect
+    engine = create_engine(f'mysql+mysqlconnector://{user}:{password}@{database}.{host}:{port}/{schema}')
+  File "<string>", line 2, in create_engine
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlalchemy/util/deprecations.py", line 309, in warned
+    return fn(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 548, in create_engine
+    dbapi = dialect_cls.dbapi(**dbapi_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/sqlalchemy/dialects/mysql/mysqlconnector.py", line 129, in dbapi
+    from mysql import connector
+ModuleNotFoundError: No module named 'mysql'
+PYTHON RUNNING FAILED
+[ERROR:] RETURN CODE:  1
+[ERROR:] REFER TO THE LOG FOR THE REASON FOR THE FAILURE.
